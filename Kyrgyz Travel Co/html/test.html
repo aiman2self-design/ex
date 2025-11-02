@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title data-en="Kyrgyz Travel — example landing page">Kyrgyz Travel — пример лендинга</title>
+    <link rel="stylesheet" href="../css/i.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a class="logo" href="#">
+                <span class="mark">KT</span>
+                <span>
+                    <div style="font-size:14px;color:var(--muted);font-weight:600">Kyrgyz</div>
+                    <div style="font-size:16px;margin-top:-6px">Travel Co.</div>
+                </span>
+            </a>
+
+            <div style="display:flex;align-items:center;gap:10px;margin-left:10px">
+                <button id="themeToggle" class="btn secondary">🌙</button>
+                <div class="language-switcher" id="langSwitcher" data-en="RU" >EN</div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="hero fade-in" id="home">
+        <div class="container">
+            <div class="grid">
+                <div class="hero-left">
+                    <div class="eyebrow pill" data-en="Explore Kyrgyzstan">Explore Kyrgyzstan</div>
+
+                    <h1 data-en="Traveling in Kyrgyzstan — natural wonders and nomadic culture">
+                        Путешествия по Кыргызстану — природные чудеса и кочевая культура
+                    </h1>
+
+                    <p class="lead"
+                        data-en="We organize expeditions, horseback tours, and cultural programs. Small groups, experienced guides, authentic experience.">
+                        Организуем экспедиции, конные туры и культурные программы. Малые группы, опытные гиды,
+                        аутентичный опыт.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <button class="btn" id="down" data-en="Contact">Связаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section fade-in" id="tours">
+        <div class="container">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+                <div>
+                    <h2 data-en="Our Tours">Наши туры</h2>
+                    <p class="muted" data-en="Expeditions, horseback trips, family programs and custom routes">
+                        Экспедиции, конные походы, семейные программы и индивидуальные маршруты
+                    </p>
+                </div>
+            </div>
+
+            <div class="cards fade-in">
+                <article class="card">
+                    <img src="../img/horse-tour-ketmen-e1671558551342.jpeg"
+                        alt="">
+                    <h3 data-en="Horse Tour">Конный тур</h3>
+                    <p class="muted" data-en="1–10 days · Horses · Nomadic experience">1–10 дней · Лошади · Кочевой опыт
+                    </p>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+                        <div class="price" data-en="Negotiable">Договорная</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section fade-in" id="why" style="padding-top:24px;padding-bottom:36px">
+        <div class="container">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+                <div>
+                    <h2 data-en="Why Choose Us">Почему именно мы</h2>
+                    <p class="muted" data-en="Experienced guides, safety and authenticity">Опытные гиды, безопасность и
+                        аутентичность</p>
+                </div>
+            </div>
+
+            <div class="highlights" style="margin-top:16px">
+                <div class="badge">
+                    <div style="font-size:22px;font-weight:800" data-en="Guarantee">Гарантия</div>
+                    <h4 data-en="Safety">Безопасность</h4>
+                    <div class="muted" data-en="Verified routes">Проверенные маршруты</div>
+                </div>
+
+                <div class="badge">
+                    <div style="font-size:22px;font-weight:800" data-en="Service">Сервис</div>
+                    <h4 data-en="Comfort">Комфорт</h4>
+                    <div class="muted" data-en="Comfortable overnight stays and quality food">Комфортные ночёвки и
+                        качественное питание</div>
+                </div>
+
+                <div class="badge">
+                    <div style="font-size:22px;font-weight:800" data-en="Culture">Культура</div>
+                    <h4 data-en="Authenticity">Аутентичность</h4>
+                    <div class="muted" data-en="Introduction to traditions and crafts">Знакомство с традициями и
+                        ремёслами</div>
+                </div>
+
+                <div class="badge">
+                    <div style="font-size:22px;font-weight:800" data-en="Flexibility">Гибкость</div>
+                    <h4 data-en="Personal approach">Индивидуальный подход</h4>
+                    <div class="muted" data-en="Route selection for your group">Подбор маршрута под вашу группу</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section fade-in" id="contact" style="padding-bottom:36px">
+        <div class="container">
+            <h2 data-en="Contact Us">Связаться с нами</h2>
+            <p class="muted" data-en="Leave a request — we will select the best tour for you">Оставьте заявку — мы
+                подберём оптимальный тур под вас</p>
+
+            <div class="contact-grid" style="margin-top:18px">
+                <div class="form">
+                    <form id="contactForm">
+                        <label for="name" data-en="Name">Имя</label>
+                        <input id="name" type="text" required placeholder="Ваше имя" data-en-placeholder="Your name">
+
+                        <label for="email" style="margin-top:10px" data-en="Email">Email</label>
+                        <input id="email" type="email" required placeholder="you@example.com"
+                            data-en-placeholder="you@example.com">
+
+                        <label for="number" style="margin-top:10px" data-en="WhatsApp">WhatsApp</label>
+                        <input id="number" type="tel" required placeholder="+996 XXX XXX XXX"
+                            data-en-placeholder="+996 XXX XXX XXX">
+
+                        <label for="message" style="margin-top:10px" data-en="Message">Сообщение</label>
+                        <textarea id="message" rows="5" placeholder="Расскажите, что вы хотите"
+                            data-en-placeholder="Tell us what you want"></textarea>
+
+                        <div style="margin-top:12px;display:flex;gap:10px">
+                            <button class="btn" type="submit" data-en="Send">Отправить</button>
+                            <button class="btn secondary" type="button" id="ctaWa" data-en="Write in WhatsApp">Написать
+                                в WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside
+                    style="background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(10,15,20,0.03)">
+                    <h4 data-en="Contacts">Контакты</h4>
+                    <p class="muted">Email: flex.travel.kg@gmail.com</p>
+                    <p class="muted">WhatsApp: +996 771 133 194</p>
+                    <p class="muted">Telegram: @taalai_chor</p>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+            <div>
+                <strong>Kyrgyz Travel Co.</strong>
+                <div class="muted" data-en="© 2025 — All rights reserved">© 2025 — Все права защищены</div>
+            </div>
+            <div style="display:flex;gap:12px;align-items:center">
+                <a href="#" class="muted" data-en="Privacy Policy">Политика конфиденциальности</a>
+                <a href="#" class="muted" data-en="Terms">Условия</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/i.js"></script>
+
+</body>
+
+</html>
+
